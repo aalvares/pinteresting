@@ -29,4 +29,8 @@ Pinteresting::Application.configure do
 
   #Required for heroku
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # for Paperclip to work
+  Paperclip.options[:command_path] = "/c/windows/system32/"
+
 end
